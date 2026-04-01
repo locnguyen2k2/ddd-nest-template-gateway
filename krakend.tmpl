@@ -10,19 +10,19 @@
     {{ range $idx, $endpoint := .backend.features }}
       {{if $idx}},{{end}}
       {{ template "backend.tmpl" $endpoint }}
-    {{ end }},
+    {{ end }}
     {{ range $idx, $endpoint := .backend.users }}
       {{if $idx}},{{end}}
       {{ template "backend.tmpl" $endpoint }}
-    {{ end }},
+    {{ end }}
     {{ range $idx, $endpoint := .backend.roles }}
       {{if $idx}},{{end}}
       {{ template "backend.tmpl" $endpoint }}
-    {{ end }},
+    {{ end }}
     {{ range $idx, $endpoint := .backend.projects }}
       {{if $idx}},{{end}}
       {{ template "backend.tmpl" $endpoint }}
-    {{ end }},
+    {{ end }}
     {{ range $idx, $endpoint := .backend.organizations }}
       {{if $idx}},{{end}}
       {{ template "backend.tmpl" $endpoint }}
