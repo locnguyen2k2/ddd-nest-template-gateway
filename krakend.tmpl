@@ -2,27 +2,28 @@
   "$schema": "https://www.krakend.io/schema/krakend.json",
   "version": 3,
   "name": "Core Gateway",
-  "timeout": "300s",
+  "timeout": "500s",
   "port": 8080,
-  "cache_ttl": "300s",
+  "cache_ttl": "50s",
+  "listen_ip": "0.0.0.0",
   "extra_config": {{ marshal .service.extra_config }},
   "endpoints": [
     {{ range $idx, $endpoint := .backend.features }}
       {{if $idx}},{{end}}
       {{ template "backend.tmpl" $endpoint }}
-    {{ end }}
+    {{ end }},
     {{ range $idx, $endpoint := .backend.users }}
       {{if $idx}},{{end}}
       {{ template "backend.tmpl" $endpoint }}
-    {{ end }}
+    {{ end }},
     {{ range $idx, $endpoint := .backend.roles }}
       {{if $idx}},{{end}}
       {{ template "backend.tmpl" $endpoint }}
-    {{ end }}
+    {{ end }},
     {{ range $idx, $endpoint := .backend.projects }}
       {{if $idx}},{{end}}
       {{ template "backend.tmpl" $endpoint }}
-    {{ end }}
+    {{ end }},
     {{ range $idx, $endpoint := .backend.organizations }}
       {{if $idx}},{{end}}
       {{ template "backend.tmpl" $endpoint }}

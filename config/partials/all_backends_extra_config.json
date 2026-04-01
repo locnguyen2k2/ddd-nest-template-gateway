@@ -1,0 +1,8 @@
+{
+  "qos/ratelimit/router": {
+    "client_max_rate": 2000,
+    "client_capacity": 4000,
+    "strategy": "ip",
+    "every": "1s"
+  }
+}
