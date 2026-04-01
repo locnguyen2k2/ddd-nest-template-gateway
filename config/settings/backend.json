@@ -1,9 +1,172 @@
 {
-  "endpoints": [
+  "features": [
     {
-      "endpoint": "/gw/api/v1",
+      "endpoint": "/gw/apis/v1/features",
       "method": "POST",
       "backend": "/apis/v1/features"
+    },
+    {
+      "endpoint": "/gw/apis/v1/features",
+      "method": "GET",
+      "backend": "/apis/v1/features"
+    },
+    {
+      "endpoint": "/gw/apis/v1/features/{id}",
+      "method": "GET",
+      "backend": "/apis/v1/features/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/features/{id}",
+      "method": "PATCH",
+      "backend": "/apis/v1/features/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/features/{id}",
+      "method": "DELETE",
+      "backend": "/apis/v1/features/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/features/slug/{slug}",
+      "method": "GET",
+      "backend": "/apis/v1/features/slug/{slug}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/features/cursor",
+      "method": "GET",
+      "backend": "/apis/v1/features/cursor"
+    }
+  ],
+  "organizations": [
+     {
+      "endpoint": "/gw/apis/v1/organizations",
+      "method": "POST",
+      "backend": "/apis/v1/organizations"
+    },
+    {
+      "endpoint": "/gw/apis/v1/organizations",
+      "method": "GET",
+      "backend": "/apis/v1/organizations"
+    },
+    {
+      "endpoint": "/gw/apis/v1/organizations/{id}",
+      "method": "GET",
+      "backend": "/apis/v1/organizations/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/organizations/{id}",
+      "method": "PATCH",
+      "backend": "/apis/v1/organizations/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/organizations/{id}",
+      "method": "DELETE",
+      "backend": "/apis/v1/organizations/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/organizations/slug/{slug}",
+      "method": "GET",
+      "backend": "/apis/v1/organizations/slug/{slug}"
+    }
+  ],
+  "roles": [
+     {
+      "endpoint": "/gw/apis/v1/roles",
+      "method": "POST",
+      "backend": "/apis/v1/roles"
+    },
+    {
+      "endpoint": "/gw/apis/v1/roles",
+      "method": "GET",
+      "backend": "/apis/v1/roles"
+    },
+    {
+      "endpoint": "/gw/apis/v1/roles/{id}",
+      "method": "GET",
+      "backend": "/apis/v1/roles/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/roles/{id}",
+      "method": "PATCH",
+      "backend": "/apis/v1/roles/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/roles/{id}",
+      "method": "DELETE",
+      "backend": "/apis/v1/roles/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/roles/slug/{slug}",
+      "method": "GET",
+      "backend": "/apis/v1/roles/slug/{slug}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/roles/cursor",
+      "method": "GET",
+      "backend": "/apis/v1/roles/cursor"
+    }
+  ],
+ "projects": [
+     {
+      "endpoint": "/gw/apis/v1/projects",
+      "method": "POST",
+      "backend": "/apis/v1/projects"
+    },
+    {
+      "endpoint": "/gw/apis/v1/projects",
+      "method": "GET",
+      "backend": "/apis/v1/projects"
+    },
+    {
+      "endpoint": "/gw/apis/v1/projects/{id}",
+      "method": "GET",
+      "backend": "/apis/v1/projects/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/projects/{id}",
+      "method": "PATCH",
+      "backend": "/apis/v1/projects/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/projects/{id}",
+      "method": "DELETE",
+      "backend": "/apis/v1/projects/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/projects/slug/{slug}",
+      "method": "GET",
+      "backend": "/apis/v1/projects/slug/{slug}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/projects/cursor",
+      "method": "GET",
+      "backend": "/apis/v1/projects/cursor"
+    }
+  ],
+   "users": [
+     {
+      "endpoint": "/gw/apis/v1/users/register",
+      "method": "POST",
+      "backend": "/apis/v1/users/register"
+    },
+    {
+      "endpoint": "/gw/apis/v1/users/login",
+      "method": "POST",
+      "backend": "/apis/v1/users/login"
+    },
+    {
+      "endpoint": "/gw/apis/v1/users/verify-access-token",
+      "method": "POST",
+      "backend": "/apis/v1/users/verify-access-token"
+    },
+    {
+      "endpoint": "/gw/apis/v1/users/refresh-token",
+      "method": "POST",
+      "backend": "/apis/v1/users/refresh-token"
+    },
+    {
+      "endpoint": "/gw/apis/v1/users/logout",
+      "method": "POST",
+      "backend": "/apis/v1/users/logout"
     }
   ]
 }
