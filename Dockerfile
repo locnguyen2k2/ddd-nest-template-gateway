@@ -10,4 +10,4 @@ COPY . /etc/krakend/
 EXPOSE 8080
 
 # Default command to run Krakend with a template file
-CMD ["run", "-dc", "/etc/krakend/krakend.tmpl"]
+CMD ["run", "-d", "-c", "/etc/krakend/krakend.tmpl"]
