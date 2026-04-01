@@ -1,0 +1,9 @@
+{
+  "endpoints": [
+    {
+      "endpoint": "/gw/api/v1",
+      "method": "POST",
+      "backend": "/apis/v1/features"
+    }
+  ]
+}

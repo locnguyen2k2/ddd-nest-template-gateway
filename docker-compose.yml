@@ -1,0 +1,40 @@
+services:
+  krakend:
+    build:
+      context: .
+    restart: unless-stopped
+    container_name: krakend
+    env_file:
+      - .env
+    volumes:
+      - ./:/etc/krakend/
+    ports:
+      - "8080:8080"
+      - "9091:9091"
+    networks:
+      - core-backend-network
+
+  # grafana:
+  #   image: grafana/grafana:latest
+  #   container_name: grafana
+  #   restart: unless-stopped
+  #   ports:
+  #     - "3001:3000"
+  #   environment:
+  #     GF_SECURITY_ADMIN_USER: "admin"
+  #     GF_SECURITY_ADMIN_PASSWORD: "admin"
+  #     GF_ALLOW_SIGN_UP: "false"
+  #     GF_SERVER_DOMAIN: "host.docker.internal"
+  #     GF_LOG_MODE: "console file"
+  #     GF_LOG_FILTERS: "alerting.notifier.slack.debug alermanager:debug ngalert:debug"
+  #   volumes:
+  #     - grafana_data:/var/lib/grafana
+  #   networks:
+  #     - core-backend-network
+
+# volumes:
+#   grafana_data:
+
+networks:
+  core-backend-network:
+    driver: bridge

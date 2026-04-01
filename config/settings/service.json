@@ -1,0 +1,27 @@
+{
+    "extra_config": {
+      "telemetry/opentelemetry": {
+        "service_name": "krakend_prometheus_service",
+        "metric_reporting_period": 1,
+        "exporters": {
+          "prometheus": [
+            {
+              "name": "local_prometheus",
+              "port": 9090,
+              "process_metrics": true,
+              "go_metrics": true
+            }
+          ]
+        }
+      },
+      "github_com/devopsfaith/krakend-health": {
+        "endpoint": "/__health"
+      },
+      "security/cors": {
+        "allow_origins": ["*"],
+        "allow_methods": ["GET", "POST", "OPTIONS", "PUT", "DELETE", "PATCH"],
+        "allow_headers": ["Content-Type", "Authorization"],
+        "max_age": "24h"
+      }
+    }
+  }
