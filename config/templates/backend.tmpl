@@ -9,8 +9,7 @@
 			"sd": "static",
 			"host": ["{{ env `BACKEND_URL` }}"],
 			"method": "{{ .method }}",
-			"disable_host_sanitize": false,
-			"output_headers": ["*"]
+			"disable_host_sanitize": false
 	  }
 	],
 	"extra_config": {{ include "all_backends_extra_config.json" }},
