@@ -8,4 +8,4 @@ COPY . /etc/krakend/
 
 EXPOSE 8080
 
-CMD ["run", "-d", "-c", "/etc/krakend/krakend.tmpl"]
+CMD ["run", "-dc", "/etc/krakend/krakend.tmpl"]
