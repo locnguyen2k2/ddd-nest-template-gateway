@@ -1,3 +1,4 @@
+# Use the official Krakend watch image
 FROM krakend:2.9
 
 # Set working directory for better clarity
@@ -8,4 +9,5 @@ COPY . /etc/krakend/
 
 EXPOSE 8080
 
-CMD ["run", "-d", "-c", "/etc/krakend/krakend.tmpl"]
+# Default command to run Krakend with a template file
+CMD ["run", "-dc", "/etc/krakend/krakend.tmpl"]
