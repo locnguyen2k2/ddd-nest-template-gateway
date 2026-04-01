@@ -1,19 +1,10 @@
 {
   "extra_config": {
-    "telemetry/opentelemetry": {
-      "service_name": "krakend_prometheus_service",
-      "metric_reporting_period": 1,
-      "exporters": {
-        "prometheus": [
-          {
-            "name": "local_prometheus",
-            "port": 9090,
-            "listen_ip": "::",
-            "process_metrics": true,
-            "go_metrics": true
-          }
-        ]
-      }
+    "github_com/devopsfaith/krakend-gologger": {
+      "level": "DEBUG",
+      "prefix": "[KRAKEND]",
+      "syslog": false,
+      "stdout": true
     },
     "github_com/devopsfaith/krakend-health": {
       "endpoint": "/__health"
