@@ -9,7 +9,15 @@
 			"sd": "static",
 			"host": ["{{ env `BACKEND_URL` }}"],
 			"method": "{{ .method }}",
-			"disable_host_sanitize": false
+			"disable_host_sanitize": false,
+			"deny": [
+				"Access-Control-Allow-Origin",
+				"Access-Control-Allow-Credentials",
+				"Access-Control-Allow-Methods",
+				"Access-Control-Allow-Headers",
+				"Access-Control-Expose-Headers",
+				"Access-Control-Max-Age"
+			]
 	  }
 	],
 	"extra_config": {{ include "all_backends_extra_config.json" }},
