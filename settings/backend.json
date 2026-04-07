@@ -148,6 +148,11 @@
     }
   ],
    "users": [
+    {
+      "endpoint": "/gw/apis/v1/users/me",
+      "method": "GET",
+      "backend": "/apis/v1/users/me"
+    },
      {
       "endpoint": "/gw/apis/v1/users/register",
       "method": "POST",
