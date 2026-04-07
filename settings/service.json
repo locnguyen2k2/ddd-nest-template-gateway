@@ -19,7 +19,9 @@
         "User-Agent",
         "Accept",
         "Referer",
-        "Origin"
+        "Origin",
+        "Organization-Id",
+        "Project-Id"
       ],
       "max_age": "24h"
     }

@@ -43,6 +43,11 @@
       "backend": "/apis/v1/organizations"
     },
     {
+      "endpoint": "/gw/apis/v1/organizations/cursor",
+      "method": "GET",
+      "backend": "/apis/v1/organizations/cursor"
+    },
+    {
       "endpoint": "/gw/apis/v1/organizations",
       "method": "GET",
       "backend": "/apis/v1/organizations"
