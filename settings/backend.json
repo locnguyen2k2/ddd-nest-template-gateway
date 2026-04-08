@@ -37,7 +37,7 @@
     }
   ],
   "organizations": [
-     {
+    {
       "endpoint": "/gw/apis/v1/organizations",
       "method": "POST",
       "backend": "/apis/v1/organizations"
@@ -74,7 +74,7 @@
     }
   ],
   "roles": [
-     {
+    {
       "endpoint": "/gw/apis/v1/roles",
       "method": "POST",
       "backend": "/apis/v1/roles"
@@ -110,8 +110,8 @@
       "backend": "/apis/v1/roles/cursor"
     }
   ],
- "projects": [
-     {
+  "projects": [
+    {
       "endpoint": "/gw/apis/v1/projects",
       "method": "POST",
       "backend": "/apis/v1/projects"
@@ -147,13 +147,18 @@
       "backend": "/apis/v1/projects/cursor"
     }
   ],
-   "users": [
+  "users": [
+    {
+      "endpoint": "/gw/apis/v1/users/check-permission",
+      "method": "POST",
+      "backend": "/apis/v1/users/check-permission"
+    },
     {
       "endpoint": "/gw/apis/v1/users/me",
       "method": "GET",
       "backend": "/apis/v1/users/me"
     },
-     {
+    {
       "endpoint": "/gw/apis/v1/users/register",
       "method": "POST",
       "backend": "/apis/v1/users/register"
