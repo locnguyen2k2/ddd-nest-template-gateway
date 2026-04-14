@@ -43,9 +43,14 @@
       "backend": "/apis/v1/organizations"
     },
     {
-      "endpoint": "/gw/apis/v1/organizations/cursor",
+      "endpoint": "/gw/apis/v1/organizations/joined",
+      "method": "POST",
+      "backend": "/apis/v1/organizations/joined"
+    },
+    {
+      "endpoint": "/gw/apis/v1/organizations/joined/cursor",
       "method": "GET",
-      "backend": "/apis/v1/organizations/cursor"
+      "backend": "/apis/v1/organizations/joined/cursor"
     },
     {
       "endpoint": "/gw/apis/v1/organizations",
