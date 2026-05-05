@@ -105,6 +105,13 @@
       "backend": "/apis/v1/organizations/{orgId}/policies/{id}"
     }
   ],
+  "attributes": [
+   {
+      "endpoint": "/gw/apis/v1/departments",
+      "method": "GET",
+      "backend": "/apis/v1/departments"
+    },
+  ],
   "departments": [
     {
       "endpoint": "/gw/apis/v1/departments",
