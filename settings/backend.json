@@ -80,27 +80,32 @@
   ],
   "policies": [
     {
-      "endpoint": "/gw/apis/v1/organizations/{orgId}/policies",
+      "endpoint": "/gw/apis/v1/policies/{id}",
+      "method": "GET",
+      "backend": "/apis/v1/organizations/{orgId}/policies/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/policies/organizations/{orgId}",
       "method": "GET",
       "backend": "/apis/v1/organizations/{orgId}/policies"
     },
     {
-      "endpoint": "/gw/apis/v1/organizations/{orgId}/policies",
+      "endpoint": "/gw/apis/v1/policies/organizations/{orgId}",
       "method": "POST",
       "backend": "/apis/v1/organizations/{orgId}/policies"
     },
     {
-      "endpoint": "/gw/apis/v1/organizations/{orgId}/policies/evaluate",
+      "endpoint": "/gw/apis/v1/policies/organizations/{orgId}/evaluate",
       "method": "POST",
       "backend": "/apis/v1/organizations/{orgId}/policies/evaluate"
     },
     {
-      "endpoint": "/gw/apis/v1/organizations/{orgId}/policies/{id}",
+      "endpoint": "/gw/apis/v1/policies/{id}",
       "method": "PATCH",
       "backend": "/apis/v1/organizations/{orgId}/policies/{id}"
     },
     {
-      "endpoint": "/gw/apis/v1/organizations/{orgId}/policies/{id}",
+      "endpoint": "/gw/apis/v1/policies/{id}",
       "method": "DELETE",
       "backend": "/apis/v1/organizations/{orgId}/policies/{id}"
     }
