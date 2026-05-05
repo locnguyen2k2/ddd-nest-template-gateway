@@ -28,5 +28,29 @@
     {{ range $idx, $endpoint := .backend.organizations }}
       ,{{ template "backend.tmpl" $endpoint }}
     {{ end }}
+
+    {{ range $idx, $endpoint := .backend.attributes }}
+      ,{{ template "backend.tmpl" $endpoint }}
+    {{ end }}
+
+    {{ range $idx, $endpoint := .backend.policies }}
+      ,{{ template "backend.tmpl" $endpoint }}
+    {{ end }}
+    
+    {{ range $idx, $endpoint := .backend.departments }}
+      ,{{ template "backend.tmpl" $endpoint }}
+    {{ end }}
+    
+    {{ range $idx, $endpoint := .backend.clearances }}
+      ,{{ template "backend.tmpl" $endpoint }}
+    {{ end }}
+    
+    {{ range $idx, $endpoint := .backend.subscriptions }}
+      ,{{ template "backend.tmpl" $endpoint }}
+    {{ end }}
+    
+    {{ range $idx, $endpoint := .backend.environments }}
+      ,{{ template "backend.tmpl" $endpoint }}
+    {{ end }}
   ]
 }
