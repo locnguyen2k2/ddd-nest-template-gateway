@@ -95,6 +95,11 @@
       "backend": "/apis/v1/organizations/{orgId}/policies"
     },
     {
+      "endpoint": "/gw/apis/v1/organizations/{orgId}/policies/evaluate",
+      "method": "POST",
+      "backend": "/apis/v1/organizations/{orgId}/policies/evaluate"
+    },
+    {
       "endpoint": "/gw/apis/v1/organizations/{orgId}/policies/{id}",
       "method": "PATCH",
       "backend": "/apis/v1/organizations/{orgId}/policies/{id}"
@@ -106,7 +111,7 @@
     }
   ],
   "attributes": [
-   {
+    {
       "endpoint": "/gw/apis/v1/attributes",
       "method": "GET",
       "backend": "/apis/v1/attributes"
