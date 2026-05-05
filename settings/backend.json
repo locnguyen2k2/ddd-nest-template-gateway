@@ -80,11 +80,6 @@
   ],
   "policies": [
     {
-      "endpoint": "/gw/apis/v1/organizations/{orgId}/policies/{id}",
-      "method": "GET",
-      "backend": "/apis/v1/organizations/{orgId}/policies/{id}"
-    },
-    {
       "endpoint": "/gw/apis/v1/organizations/{orgId}/policies",
       "method": "GET",
       "backend": "/apis/v1/organizations/{orgId}/policies"
