@@ -107,10 +107,10 @@
   ],
   "attributes": [
    {
-      "endpoint": "/gw/apis/v1/departments",
+      "endpoint": "/gw/apis/v1/attributes",
       "method": "GET",
-      "backend": "/apis/v1/departments"
-    },
+      "backend": "/apis/v1/attributes"
+    }
   ],
   "departments": [
     {
