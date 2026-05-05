@@ -78,6 +78,141 @@
       "backend": "/apis/v1/organizations/slug/{slug}"
     }
   ],
+  "policies": [
+    {
+      "endpoint": "/gw/apis/v1/organizations/{orgId}/policies/{id}",
+      "method": "GET",
+      "backend": "/apis/v1/organizations/{orgId}/policies/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/organizations/{orgId}/policies",
+      "method": "GET",
+      "backend": "/apis/v1/organizations/{orgId}/policies"
+    },
+    {
+      "endpoint": "/gw/apis/v1/organizations/{orgId}/policies",
+      "method": "POST",
+      "backend": "/apis/v1/organizations/{orgId}/policies"
+    },
+    {
+      "endpoint": "/gw/apis/v1/organizations/{orgId}/policies/{id}",
+      "method": "PATCH",
+      "backend": "/apis/v1/organizations/{orgId}/policies/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/organizations/{orgId}/policies/{id}",
+      "method": "DELETE",
+      "backend": "/apis/v1/organizations/{orgId}/policies/{id}"
+    }
+  ],
+  "departments": [
+    {
+      "endpoint": "/gw/apis/v1/departments",
+      "method": "POST",
+      "backend": "/apis/v1/departments"
+    },
+    {
+      "endpoint": "/gw/apis/v1/departments",
+      "method": "GET",
+      "backend": "/apis/v1/departments"
+    },
+    {
+      "endpoint": "/gw/apis/v1/departments/{id}",
+      "method": "GET",
+      "backend": "/apis/v1/departments/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/departments/{id}",
+      "method": "PATCH",
+      "backend": "/apis/v1/departments/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/departments/{id}",
+      "method": "DELETE",
+      "backend": "/apis/v1/departments/{id}"
+    }
+  ],
+  "clearances": [
+    {
+      "endpoint": "/gw/apis/v1/clearances",
+      "method": "POST",
+      "backend": "/apis/v1/clearances"
+    },
+    {
+      "endpoint": "/gw/apis/v1/clearances",
+      "method": "GET",
+      "backend": "/apis/v1/clearances"
+    },
+    {
+      "endpoint": "/gw/apis/v1/clearances/{id}",
+      "method": "GET",
+      "backend": "/apis/v1/clearances/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/clearances/{id}",
+      "method": "PATCH",
+      "backend": "/apis/v1/clearances/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/clearances/{id}",
+      "method": "DELETE",
+      "backend": "/apis/v1/clearances/{id}"
+    }
+  ],
+  "subscriptions": [
+    {
+      "endpoint": "/gw/apis/v1/subscriptions",
+      "method": "POST",
+      "backend": "/apis/v1/subscriptions"
+    },
+    {
+      "endpoint": "/gw/apis/v1/subscriptions",
+      "method": "GET",
+      "backend": "/apis/v1/subscriptions"
+    },
+    {
+      "endpoint": "/gw/apis/v1/subscriptions/{id}",
+      "method": "GET",
+      "backend": "/apis/v1/subscriptions/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/subscriptions/{id}",
+      "method": "PATCH",
+      "backend": "/apis/v1/subscriptions/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/subscriptions/{id}",
+      "method": "DELETE",
+      "backend": "/apis/v1/subscriptions/{id}"
+    }
+  ],
+  "environments": [
+    {
+      "endpoint": "/gw/apis/v1/environments",
+      "method": "POST",
+      "backend": "/apis/v1/environments"
+    },
+    {
+      "endpoint": "/gw/apis/v1/environments",
+      "method": "GET",
+      "backend": "/apis/v1/environments"
+    },
+    {
+      "endpoint": "/gw/apis/v1/environments/{id}",
+      "method": "GET",
+      "backend": "/apis/v1/environments/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/environments/{id}",
+      "method": "PATCH",
+      "backend": "/apis/v1/environments/{id}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/environments/{id}",
+      "method": "DELETE",
+      "backend": "/apis/v1/environments/{id}"
+    }
+  ],
   "roles": [
     {
       "endpoint": "/gw/apis/v1/roles",
