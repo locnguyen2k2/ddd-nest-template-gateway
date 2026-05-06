@@ -85,6 +85,11 @@
       "backend": "/apis/v1/policies/{id}"
     },
     {
+      "endpoint": "/gw/apis/v1/policies/resources/cursor",
+      "method": "GET",
+      "backend": "/apis/v1/policies/resources/cursor"
+    },
+    {
       "endpoint": "/gw/apis/v1/policies/organizations/{orgId}",
       "method": "GET",
       "backend": "/apis/v1/policies/organizations/{orgId}"
