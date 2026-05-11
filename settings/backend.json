@@ -6,6 +6,11 @@
       "backend": "/apis/v1/features"
     },
     {
+      "endpoint": "/gw/apis/v1/features/growth/{orgId}",
+      "method": "GET",
+      "backend": "/apis/v1/features/growth/{orgId}"
+    },
+    {
       "endpoint": "/gw/apis/v1/features",
       "method": "GET",
       "backend": "/apis/v1/features"
@@ -272,6 +277,11 @@
       "endpoint": "/gw/apis/v1/projects",
       "method": "POST",
       "backend": "/apis/v1/projects"
+    },
+    {
+      "endpoint": "/gw/apis/v1/projects/growth/{orgId}",
+      "method": "GET",
+      "backend": "/apis/v1/projects/growth/{orgId}"
     },
     {
       "endpoint": "/gw/apis/v1/projects",
