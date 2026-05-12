@@ -1,4 +1,11 @@
 {
+  "health": [
+    {
+      "endpoint": "/gw/health",
+      "method": "GET",
+      "backend": "/health"
+    }
+  ],
   "features": [
     {
       "endpoint": "/gw/apis/v1/features",
