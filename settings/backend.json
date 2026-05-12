@@ -350,6 +350,11 @@
   ],
   "users": [
     {
+      "endpoint": "/gw/apis/v1/users/captcha",
+      "method": "POST",
+      "backend": "/apis/v1/users/captcha"
+    },
+    {
       "endpoint": "/gw/apis/v1/users/check-permission",
       "method": "POST",
       "backend": "/apis/v1/users/check-permission"
