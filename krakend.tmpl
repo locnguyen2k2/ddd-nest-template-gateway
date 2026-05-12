@@ -57,6 +57,10 @@
       ,{{ template "backend.tmpl" $endpoint }}
     {{ end }}
     
+    {{ range $idx, $endpoint := .backend.staffs }}
+      ,{{ template "backend.tmpl" $endpoint }}
+    {{ end }}
+    
     {{ range $idx, $endpoint := .backend.dashboard }}
       ,{{ template "backend.tmpl" $endpoint }}
     {{ end }}

@@ -389,5 +389,6 @@
       "method": "POST",
       "backend": "/apis/v1/users/logout"
     }
-  ]
+  ],
+  "staffs": []
 }
