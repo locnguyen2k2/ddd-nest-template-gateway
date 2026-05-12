@@ -56,5 +56,9 @@
     {{ range $idx, $endpoint := .backend.health }}
       ,{{ template "backend.tmpl" $endpoint }}
     {{ end }}
+    
+    {{ range $idx, $endpoint := .backend.dashboard }}
+      ,{{ template "backend.tmpl" $endpoint }}
+    {{ end }}
   ]
 }

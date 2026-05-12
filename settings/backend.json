@@ -6,6 +6,38 @@
       "backend": "/health"
     }
   ],
+  "dashboard": [
+    {
+      "endpoint": "/gw/apis/v1/features/growth/{orgId}",
+      "method": "GET",
+      "backend": "/apis/v1/features/growth/{orgId}"
+    },
+    {
+      "endpoint": "/gw/apis/v1/features/percent-growth",
+      "method": "GET",
+      "backend": "/apis/v1/features/percent-growth"
+    },
+    {
+      "endpoint": "/gw/apis/v1/staffs/{orgId}/growth",
+      "method": "GET",
+      "backend": "/apis/v1/staffs/{orgId}/growth"
+    },
+    {
+      "endpoint": "/gw/apis/v1/staffs/percent-growth",
+      "method": "GET",
+      "backend": "/apis/v1/staffs/percent-growth"
+    },
+    {
+      "endpoint": "/gw/apis/v1/organizations/percent-growth",
+      "method": "GET",
+      "backend": "/apis/v1/organizations/percent-growth"
+    },
+    {
+      "endpoint": "/gw/apis/v1/projects/percent-growth",
+      "method": "GET",
+      "backend": "/apis/v1/projects/percent-growth"
+    }
+  ],
   "features": [
     {
       "endpoint": "/gw/apis/v1/features",
