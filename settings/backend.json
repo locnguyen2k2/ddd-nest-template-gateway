@@ -18,9 +18,9 @@
       "backend": "/apis/v1/features/percent-growth"
     },
     {
-      "endpoint": "/gw/apis/v1/staffs/{orgId}/growth",
+      "endpoint": "/gw/apis/v1/staffs/growth/{orgId}",
       "method": "GET",
-      "backend": "/apis/v1/staffs/{orgId}/growth"
+      "backend": "/apis/v1/staffs/growth/{orgId}"
     },
     {
       "endpoint": "/gw/apis/v1/staffs/percent-growth",
