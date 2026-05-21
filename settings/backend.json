@@ -388,6 +388,21 @@
       "endpoint": "/gw/apis/v1/users/logout",
       "method": "POST",
       "backend": "/apis/v1/users/logout"
+    },
+    {
+      "endpoint": "/gw/apis/v1/users/verify-email",
+      "method": "POST",
+      "backend": "/apis/v1/users/verify-email"
+    },
+    {
+      "endpoint": "/gw/apis/v1/users/resend-email-verification",
+      "method": "POST",
+      "backend": "/apis/v1/users/resend-email-verification"
+    },
+    {
+      "endpoint": "/gw/apis/v1/users/profile",
+      "method": "PUT",
+      "backend": "/apis/v1/users/profile"
     }
   ],
   "staffs": []
